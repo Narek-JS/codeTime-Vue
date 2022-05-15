@@ -1,0 +1,30 @@
+block search 
+    div(class="search main__content__search")
+        div(class="search__select-wrapper")
+        input(class="search__input" type="search" placeholder="Поиск")
+        div(class="search__input-right-content")
+            label(class="search__input-right-content__text" for="country")
+                |  Страна
+            select(class="search__input-right-content__select-country" name="country")
+                each country in countrys
+                    option(class="search__input-right-content__select-country__option")=country 
+            span(class="search__input-right-content__simple-row") |
+            label(class="search__input-right-content__text" for="category")
+                |  Категория
+            select(class="search__input-right-content__select-category") 
+                each category in categorys
+                    option(class="search__input-right-content__select-category__option")=category
+        div(class="search__selects")
+            div(class="search__selects__country-wrapper")
+                lable(class="search__selects__country-wrapper__lable-country")
+                    |  country
+                select(class="search__selects__country-wrapper__country")
+                    each country in countrys
+                        option(class="search__selects__country-wrapper__option")=country
+            div(class="search__selects__category-wrapper")
+                lable(class="search__selects__category-wrapper__lable-category")
+                    |  category
+                select(class="search__selects__category-wrapper__category")
+                    each category in categorys
+                        option(class="search__selects__category-wrapper__option")=category
+            

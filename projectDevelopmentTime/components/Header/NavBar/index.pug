@@ -1,0 +1,12 @@
+
+
+block nav 
+    nav(class="nav header__content__nav")
+        input(class="nav__checkbox" type="checkbox" id="navi-toggle") 
+        label(class="nav__button" for="navi-toggle")
+            span(class="nav__icon") &nbsp;  
+        ul(class="nav__lists")
+            each item in navItems
+                li(class="nav__lists__list")
+                    a(class="nav__lists__list__link" href="#")= item
+            

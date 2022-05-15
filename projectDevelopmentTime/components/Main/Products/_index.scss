@@ -1,0 +1,186 @@
+.products {
+    width: 100%;
+    margin: 35px 0; 
+    position: relative;
+
+    &__layout-slice {
+        text-align: right;
+        background: cadetblue;
+        display: flex;
+        position: absolute;
+        top: 32px;
+        right: 20px;
+
+        &__delete-all-checked {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            cursor: pointer;
+
+            &__delete-icon {
+                width: 30px;
+            }
+            &__lable {
+                white-space: nowrap;
+            }
+        }
+        
+        &__add-new-list {
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+            cursor: pointer;
+            &__add-icon {
+                filter: invert(1);
+
+            }
+            &__lable {
+                white-space: nowrap;
+
+            }
+        }
+    }
+
+
+    &__list {
+        margin-bottom: 20px;
+        position: relative;
+        background-color: #F5F7FD;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+        border-radius: 20px;
+        transition: all .1s;
+
+        @include clear-respond (920px) { &-7 { display: none; } };
+        @include clear-respond (820px) { &-6 { display: none; } };
+        @include clear-respond (720px) { &-5 { display: none; } };
+        @include clear-respond (620px) { &-4 { display: none; } };
+        @include clear-respond (520px) { 
+            &-3 { display: none; }
+            justify-content: space-around;
+        };
+        
+ 
+        &__opened-all-Item {
+            position: absolute;
+            border-radius: 0 0 15px 15px;
+            cursor: pointer;
+            bottom: 0;
+            right: 6.5px;
+            width: 50px;
+            text-align: center;
+            z-index: 1;
+            display: none;
+            @include clear-respond (920px) { display: block };
+
+            &__icon {
+                margin-bottom: -5px;
+                color: #fff;
+                width: 30px;
+            }
+
+            @include clear-respond (920px) { opacity: 1; };
+        }
+
+        &__id {
+
+        } 
+        &__product-img-type {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            &__image {
+                margin-right: 7px;
+                width: 100%;
+                max-width: 70px;
+            }
+        }
+        &__type {
+
+        }
+        &__product-name {
+            
+            &__name {
+
+            }
+            &__price {
+
+            }
+        }
+        &__geo {
+
+        }
+        &__date {
+
+        }
+        &__status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            
+
+            &__download {
+                margin-left: 5px;
+                background: #949BBE;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                border-radius: 999px;
+                object-fit: contain;
+                transition: all 2s;
+                cursor: pointer;
+
+                &:hover {
+                    object-fit: scale-down;
+                }
+                &:active {
+                    object-fit:contain;
+                }
+            }
+            &__delete {
+                margin-left: 5px; 
+                background: #949BBE;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                border-radius: 999px;
+                object-fit: contain;
+                transition: all 2s;
+                cursor: pointer;
+
+                &:hover {
+                    object-fit: scale-down;
+                }
+                &:active {
+                    object-fit:contain;
+                }
+            }
+            &__check {
+                width: 20px;
+                height: 20px;
+                margin-left: 5px;
+                padding: 5px;
+                border: none;
+                border-radius: 999px;
+                background-color: blue;
+                border: 1px solid transparent;
+                transition: all .1s;
+                cursor: pointer;
+                
+                &:hover {
+                    border: 1px solid yellow; 
+                }
+                &:active {
+                    transform: scale(.9);
+                }
+
+                &--active {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "",
+        "productImgType": {
+            "imgName": "productImg1",
+            "type": "Уход за телом"
+        },
+        "type": "Develop",
+        "productName": {
+            "name" : "AlcoTaboo",
+            "price": "149 p."
+        },
+        "geo": "RU",
+        "date": "Сегодня 13:18",
+        "status": {
+            "download": {
+                "icon": "icon-download"
+            },
+            "delete": {
+                "icon": "icon-delete"
+            },
+            "check": true
+        }
+    },
+    {
+        "id": "",
+        "productImgType": {
+            "imgName": "productImg1",
+            "type": "Уход за телом"
+        },
+        "type": "Develop",
+        "productName": {
+            "name" : "AlcoTaboo",
+            "price": "149 p."
+        },
+        "geo": "RU",
+        "date": "Сегодня 13:18",
+        "status": {
+            "download": {
+                "icon": "icon-download"
+            },
+            "delete": {
+                "icon": "icon-delete"
+            },
+            "check": true
+        }
+    }
+]

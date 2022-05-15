@@ -1,0 +1,103 @@
+.mobile-list {
+    display: none;
+    position: absolute; 
+    right: 55px;
+    background: cadetblue;
+    top: 68px;
+    border-radius: 0 0 15px 15px;
+    padding: 12px 25px 12px 12px;
+    z-index: 1;
+
+    &__closed-popUp {
+        margin: -12px -8px 0px 0;
+        height: 24px;
+        padding: 0px 7px;
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    &__type-wrapper {
+        display: none;
+        @include clear-respond (520px) { display: flex;};
+
+        &__lable {
+            margin-right: 5px;
+        }
+
+        &__type {
+
+        }
+    }
+
+    &__product-name {
+        display: none;
+        @include clear-respond (620px) { display: flex; };
+
+        &__lable {
+            margin-right: 5px;
+        }
+        &__wrapper {
+            &__name {
+
+            }
+            &__price {
+
+            }
+        }
+    }
+
+    &__geo {
+        display: none;
+        @include clear-respond (720px) { display: flex; };
+
+        &__lable {
+            margin-right: 5px;
+        }
+        &__text {
+
+        }
+    }
+
+    &__date {
+        display: none;
+        @include clear-respond (820px) {  display: flex; };
+
+        &__lable {
+            margin-right: 5px;
+        }
+        &__text {
+
+        }
+    }
+
+    &__status {
+        display: flex;
+
+        &__lable {
+            margin-right: 5px;
+        }
+
+        &__wrapper-icon {
+
+            &__download {
+                width: 22px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            &__delete {
+                width: 22px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            &__check {
+                height: 22px;
+                width: 22px;
+                border-radius: 999px;
+                border: none;   
+                cursor: pointer;
+            }   
+        }
+    }
+}

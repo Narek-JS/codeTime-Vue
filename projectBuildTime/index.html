@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css?_v=20220515141145">
+    <link rel="shortcut icon" href="./assets/images/University.png" type="image/x-icon">
+</head>
+
+<body><img class="hhh">
+    <header class="header">
+        <div class="continer header__continer">
+            <div class="header__content header__continer__content">
+                <div class="header__content__logo"><img class="header__content__logo__img" src="./assets/svg/logo.svg" alt="logo">
+                    <h1 class="header__content__logo__title"> PreLanding Redaktor</h1>
+                </div>
+                <nav class="nav header__content__nav">
+                    <input class="nav__checkbox" type="checkbox" id="navi-toggle">
+                    <label class="nav__button" for="navi-toggle"><span class="nav__icon">&nbsp;  </span></label>
+                    <ul class="nav__lists">
+                        <li class="nav__lists__list"><a class="nav__lists__list__link" href="#">Мои проекты</a></li>
+                        <li class="nav__lists__list"><a class="nav__lists__list__link" href="#">Шаблоны</a></li>
+                        <li class="nav__lists__list"><a class="nav__lists__list__link" href="#">Пользователи</a></li>
+                        <li class="nav__lists__list"><a class="nav__lists__list__link" href="#">Все Проекты</a></li>
+                    </ul>
+                </nav>
+                <picture>
+                    <source srcset="./assets/images/user.webp" type="image/webp"><img class="header__content__user-img user-img" src="./assets/images/user.png" alt="user">
+                </picture>
+            </div>
+            <div class="pop-up header__content__pop-up">
+                <div class="pop-up__user">
+                    <picture>
+                        <source srcset="./assets/images/user.webp" type="image/webp"><img class="pop-up__user__img user-img" src="./assets/images/user.png">
+                    </picture>
+                    <p class="pop-up__user__name">Phillip Mackie</p>
+                </div>
+                <p class="pop-up__full-row"></p>
+                <ul class="pop-up__lists">
+                    <li class="pop-up__lists__list pop-up__lists__list-profile">Профиль</li>
+                    <li class="pop-up__lists__list pop-up__lists__list-password">Пароль</li>
+                    <li class="pop-up__lists__list pop-up__lists__list-Autosave">Автосохранения</li>
+                </ul>
+                <p class="pop-up__full-row"></p>
+                <p class="pop-up__log-out">Выйти</p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="continer main__continer">
+            <div class="main__content main__continer__content">
+                <div class="search main__content__search">
+                    <div class="search__select-wrapper"></div>
+                    <input class="search__input" type="search" placeholder="Поиск">
+                    <div class="search__input-right-content">
+                        <label class="search__input-right-content__text" for="country"> Страна</label>
+                        <select class="search__input-right-content__select-country" name="country">
+                            <option class="search__input-right-content__select-country__option">all</option>
+                            <option class="search__input-right-content__select-country__option">Россия</option>
+                            <option class="search__input-right-content__select-country__option">Белоруссия</option>
+                            <option class="search__input-right-content__select-country__option">Армения</option>
+                            <option class="search__input-right-content__select-country__option">США</option>
+                        </select><span class="search__input-right-content__simple-row">|</span>
+                        <label class="search__input-right-content__text" for="category"> Категория</label>
+                        <select class="search__input-right-content__select-category">
+                            <option class="search__input-right-content__select-category__option">all</option>
+                            <option class="search__input-right-content__select-category__option">date structure</option>
+                            <option class="search__input-right-content__select-category__option">designer</option>
+                            <option class="search__input-right-content__select-category__option">back end</option>
+                            <option class="search__input-right-content__select-category__option">front end</option>
+                        </select>
+                    </div>
+                    <div class="search__selects">
+                        <div class="search__selects__country-wrapper">
+                            <lable class="search__selects__country-wrapper__lable-country"> country</lable>
+                            <select class="search__selects__country-wrapper__country">
+                                <option class="search__selects__country-wrapper__option">all</option>
+                                <option class="search__selects__country-wrapper__option">Россия</option>
+                                <option class="search__selects__country-wrapper__option">Белоруссия</option>
+                                <option class="search__selects__country-wrapper__option">Армения</option>
+                                <option class="search__selects__country-wrapper__option">США</option>
+                            </select>
+                        </div>
+                        <div class="search__selects__category-wrapper">
+                            <lable class="search__selects__category-wrapper__lable-category"> category</lable>
+                            <select class="search__selects__category-wrapper__category">
+                                <option class="search__selects__category-wrapper__option">all</option>
+                                <option class="search__selects__category-wrapper__option">date structure</option>
+                                <option class="search__selects__category-wrapper__option">designer</option>
+                                <option class="search__selects__category-wrapper__option">back end</option>
+                                <option class="search__selects__category-wrapper__option">front end</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile main__content__profile">
+                    <div class="profile__block">
+                        <div class="profile__block__wrapper-title">
+                            <h3 class="profile__block__wrapper-title__title">Профиль</h3><span class="profile__block__wrapper-title__closed-window closed-window-profile">X</span>
+                        </div>
+                        <div class="user profile__block__user">
+                            <picture>
+                                <source srcset="./assets/images/user.webp" type="image/webp"><img class="user__img user-img" src="./assets/images/user.png" alt="user">
+                            </picture>
+                            <label for="inputFile"> <img class="user__icon-upload-img" src="./assets/svg/icon-upload-img.svg" alt="icon upload img"></label>
+                            <input class="user__input-file" type="file" name="inputFile" id="inputFile">
+                            <p class="user__name">Phillip Mackie</p>
+                        </div>
+                        <form class="form profile__block__form" action="">
+                            <input class="form__input form__input-login" type="text" name="login" placeholder="Логин : admin" required="required">
+                            <input class="form__input form__input-name" type="text" name="name" placeholder="Логин : admin" required="required">
+                            <input class="form__input form__input-email" type="email" name="email" placeholder="Эл. адрес : admin@plr.ru" required="required">
+                            <button class="form__btn" type="submit">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="checked-items-popup-100vh">
+                    <div class="checked-items-popup main__content__checked-items-popup">
+                        <p class="checked-items-popup__closed-popup">X</p>
+                        <p class="checked-items-popup__text"> are you shure </p>
+                        <div class="checked-items-popup__wrapper-btns">
+                            <button class="checked-items-popup__wrapper-btns__yes" type="button"> yes</button>
+                            <button class="checked-items-popup__wrapper-btns__no" type="button"> no</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-new-product-list main__content__add-new-product-list">
+                    <div class="add-new-product-list__wrapper-block">
+                        <p class="add-new-product-list__wrapper-block__close"> X </p>
+                        <div class="add-new-product-list__wrapper-block__productImg">
+                            <p class="add-new-product-list__wrapper-block__productImg__text"> choose product img</p>
+                            <input class="add-new-product-list__wrapper-block__productImg__input" type="file">
+                        </div>
+                        <div class="add-new-product-list__wrapper-block__product-name">
+                            <input class="add-new-product-list__wrapper-block__product-name__input" type="text" placeholder="write product name">
+                        </div>
+                        <div class="add-new-product-list__wrapper-block__product-price">
+                            <input class="add-new-product-list__wrapper-block__product-price__input" type="text" placeholder="write price">
+                        </div>
+                        <div class="add-new-product-list__wrapper-block__cotigory">
+                            <label class="add-new-product-list__wrapper-block__cotigory__lable">
+                                select cotigory </label>
+                            <select class="add-new-product-list__wrapper-block__cotigory__select">
+                                <option class="add-new-product-list__wrapper-block__cotigory__select__option">all</option>
+                                <option class="add-new-product-list__wrapper-block__cotigory__select__option">date structure</option>
+                                <option class="add-new-product-list__wrapper-block__cotigory__select__option">designer</option>
+                                <option class="add-new-product-list__wrapper-block__cotigory__select__option">back end</option>
+                                <option class="add-new-product-list__wrapper-block__cotigory__select__option">front end</option>
+                            </select>
+                        </div>
+                        <div class="add-new-product-list__wrapper-block__geo">
+                            <label class="add-new-product-list__wrapper-block__geo__lable">
+                                select country </label>
+                            <select class="add-new-product-list__wrapper-block__geo__select">
+                                <option class="add-new-product-list__wrapper-block__geo__select__option">all</option>
+                                <option class="add-new-product-list__wrapper-block__geo__select__option">Россия</option>
+                                <option class="add-new-product-list__wrapper-block__geo__select__option">Белоруссия</option>
+                                <option class="add-new-product-list__wrapper-block__geo__select__option">Армения</option>
+                                <option class="add-new-product-list__wrapper-block__geo__select__option">США</option>
+                            </select>
+                        </div>
+                        <div class="add-new-product-list__wrapper-block__submit">
+                            <button class="add-new-product-list__wrapper-block__submit__btn" disabled> submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="products main__content__products">
+                    <div class="sections products__sections">
+                        <ul class="sections__lists">
+                            <li class="sections__lists__list sections__lists__list-1">N<img class="sections__lists__list__icon" src="./assets/svg/arow-for-section.svg" alt="icon arrow"></li>
+                            <li class="sections__lists__list sections__lists__list-2">Проекты<img class="sections__lists__list__icon" src="./assets/svg/arow-for-section.svg" alt="icon arrow"></li>
+                            <li class="sections__lists__list sections__lists__list-3">Категория<img class="sections__lists__list__icon" src="./assets/svg/arow-for-section.svg" alt="icon arrow"></li>
+                            <li class="sections__lists__list sections__lists__list-4">Офферы<img class="sections__lists__list__icon " src="./assets/svg/aroow-top-for-section.svg" alt="icon arrow top"></li>
+                            <li class="sections__lists__list sections__lists__list-5">Гео<img class="sections__lists__list__icon" src="./assets/svg/arow-for-section.svg" alt="icon arrow"></li>
+                            <li class="sections__lists__list sections__lists__list-6">Дата<img class="sections__lists__list__icon" src="./assets/svg/arow-for-section.svg" alt="icon arrow"></li>
+                            <li class="sections__lists__list sections__lists__list-7">Статус<img class="sections__lists__list__icon" src="./assets/svg/arow-for-section.svg" alt="icon arrow"></li>
+                        </ul>
+                    </div>
+                    <div class="products__layout-slice">
+                        <div class="products__layout-slice__delete-all-checked"><img class="products__layout-slice__delete-all-checked__delete-icon" src="./assets/svg/delete.svg">
+                            <p class="products__layout-slice__delete-all-checked__lable">
+                                remove all checked</p>
+                        </div>
+                        <div class="products__layout-slice__add-new-list"><img class="products__layout-slice__add-new-list__add-icon" src="./assets/svg/added-icon.svg">
+                            <p class="products__layout-slice__add-new-list__lable"> and new list</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./js/index.js?_v=20220515141145"></script>
+    <script src="./js/styling.js?_v=20220515141145"> </script>
+</body>
+
+</html>

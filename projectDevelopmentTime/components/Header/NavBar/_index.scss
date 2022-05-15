@@ -1,0 +1,134 @@
+.nav {
+    margin: 0 130px 0 20px;
+
+    @include respond(big-desktop) { margin: 0 45px 0 20px; }
+    @include respond(tab-land)    { margin: 0 40px 0 20px;  }
+    @include clear-respond(960px) { margin: 0 20px 0 20px;  }
+
+    &__checkbox {
+        display: none;
+    }
+    &__button {
+        display: none; 
+        height: 28px;
+        width: 2.5rem;
+        position: absolute;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 5px;
+        z-index: 2000; 
+        text-align: center;
+        cursor: pointer;
+        @include clear-respond(820px) {
+            display: block;
+            top: 14px;
+            right: 63px;
+        }
+        @include clear-respond(520px) {
+            &--active {
+                top: 20px;
+                right: 20px;
+            }
+        } 
+    }
+    &__icon {
+        position: relative;
+        margin-top: 13.5px;
+        &,
+        &::before,
+        &::after {
+            width: 2.3rem;
+            height: 1px;
+            background-color: #333;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+        
+        &::before { top: -0.6rem; }
+        &::after { top: .6rem; }
+    }
+    &__lists {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include clear-respond(820px) { 
+            display: none;
+            &--active {
+                width: 100%;
+                position: fixed;
+                display: flex;
+                top: 0;
+                left: 0;
+                justify-content: flex-start;
+                background: #f5f7fd;
+                padding: 27px 10px 25px 10px;
+                box-shadow: 0px 0px 3px #000;
+            }
+            &__list {
+                font-size: 15px;
+            }
+        }
+        @include clear-respond(520px) {
+            &--active {
+                z-index: 1;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+
+                .nav__lists__list {
+                    margin: 0;
+                }
+            }
+        }
+        &__list {
+            color: $color-tertiary-base-text;
+            list-style: none;
+            transition: all .2s;
+
+            &:not(:last-child) {
+                margin-right: 25px;
+
+                @include respond(tab-land) { margin-right: 12.5px; }
+            }
+            &:hover {
+                color: $color-tertiary-base-text-hover;
+                transform: translateY(-2px) scale(1.1);
+            }
+            &:active {
+                color: $color-tertiary-base-text;
+                transform: translateY(0) scale(.8);
+            }
+            
+            &__link {
+                text-decoration: none;
+                color: $color-tertiary-base-text;
+
+            }
+        }
+    }
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+    &__checkbox:checked + &__button &__icon::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    &__checkbox:checked + &__button &__icon::after {
+       transform: rotate(-45deg);
+       top: 0;
+    }
+} 

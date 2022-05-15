@@ -1,0 +1,38 @@
+block lists
+    div(class="products main__content__products")
+        include Sections/index
+        div(class="products__layout-slice")
+            div(class="products__layout-slice__delete-all-checked")
+                img(class="products__layout-slice__delete-all-checked__delete-icon" src="@svg/delete.svg")
+                p(class="products__layout-slice__delete-all-checked__lable") 
+                    |  remove all checked
+            div(class="products__layout-slice__add-new-list")
+                img(class="products__layout-slice__add-new-list__add-icon" src="@svg/added-icon.svg")
+                p(class="products__layout-slice__add-new-list__lable")
+                    |  and new list
+        //- div(class="products__list")
+        //-     div(class="products__list__opened-all-Item")
+        //-         p(class="products__list__opened-all-Item__text")
+        //-             |  see all
+        //-         img(class="products__list__opened-all-Item__icon" src="@svg/arrow-to-down.svg" alt="icon opened all Item")
+        //-     include MobileList/index
+        //-     p(class="products__list__id products__list-1")
+        //-         | 68454
+        //-     div(class="products__list__product-img-type products__list-2")
+        //-         img(class="products__list__product-img-type__image" src="@images/productImg1.jpg")
+        //-         |  asdasdsadasd
+        //-     p(class="products__list__type products__list-3")
+        //-         |  Develop
+        //-     p(class="products__list__product-name products__list-4")
+        //-         span(class="products__list__product-name__name")
+        //-         |  AlcoTaboo 
+        //-         span(class="products__list__product-name__price")
+        //-         |  149 eur
+        //-     p(class="products__list__geo products__list-5")
+        //-         |  RU
+        //-     p(class="products__list__date products__list-6")
+        //-         |  aysor 01.01.2022
+        //-     div(class="products__list__status products__list-7")
+        //-         img(class="products__list__status__download" src="@svg/download-icon.svg")
+        //-         img(class="products__list__status__delete" src="@svg/delete.svg")
+        //-         button(class="products__list__status__check" type="button")

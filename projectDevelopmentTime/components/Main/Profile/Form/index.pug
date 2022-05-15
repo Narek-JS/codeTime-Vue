@@ -1,0 +1,12 @@
+block form
+    form(class="form profile__block__form" action="")
+        each item in formInputes
+            input(
+                class="form__input form__input-" + item.name
+                type = item.type 
+                name = item.name 
+                placeholder = item.placeholder
+                required="required"
+            )
+        button(class="form__btn" type="submit")
+            | Сохранить

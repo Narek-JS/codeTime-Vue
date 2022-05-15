@@ -1,0 +1,24 @@
+.sections {
+    margin: 0 20px 45px 20px;
+    
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+
+        @include clear-respond (520px) { 
+            justify-content: space-around;
+        };
+        &__list {
+            @include clear-respond (920px) { &-7 { display: none; } };
+            @include clear-respond (820px) { &-6 { display: none; } };
+            @include clear-respond (720px) { &-5 { display: none; } };
+            @include clear-respond (620px) { &-4 { display: none; } };
+            @include clear-respond (520px) { &-3 { display: none; } };
+            &__icon {
+                margin-left: 5px;
+            }
+        }
+    }
+}

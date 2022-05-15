@@ -1,0 +1,28 @@
+block AddNewProductList
+    div(class="add-new-product-list main__content__add-new-product-list")
+        div(class="add-new-product-list__wrapper-block")
+            p(class="add-new-product-list__wrapper-block__close")
+                |  X 
+            div(class="add-new-product-list__wrapper-block__productImg")
+                p(class="add-new-product-list__wrapper-block__productImg__text")
+                    |  choose product img
+                input(class="add-new-product-list__wrapper-block__productImg__input" type="file")
+            div(class="add-new-product-list__wrapper-block__product-name")
+                input(class="add-new-product-list__wrapper-block__product-name__input" type="text" placeholder="write product name")
+            div(class="add-new-product-list__wrapper-block__product-price")
+                input(class="add-new-product-list__wrapper-block__product-price__input" type="text" placeholder="write price")
+            div(class="add-new-product-list__wrapper-block__cotigory")
+                label(class="add-new-product-list__wrapper-block__cotigory__lable") 
+                    |  select cotigory 
+                select(class="add-new-product-list__wrapper-block__cotigory__select")
+                    each category in categorys
+                        option(class="add-new-product-list__wrapper-block__cotigory__select__option")=category 
+            div(class="add-new-product-list__wrapper-block__geo")
+                label(class="add-new-product-list__wrapper-block__geo__lable") 
+                    |  select country 
+                select(class="add-new-product-list__wrapper-block__geo__select")
+                    each country in countrys
+                        option(class="add-new-product-list__wrapper-block__geo__select__option")=country 
+            div(class="add-new-product-list__wrapper-block__submit")
+                button(class="add-new-product-list__wrapper-block__submit__btn" disabled)
+                    |  submit

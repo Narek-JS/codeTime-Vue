@@ -1,0 +1,134 @@
+.add-new-product-list {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(200,204,204,.25);
+    display: none;
+    justify-content: center;
+
+    &--active {
+        display: flex;
+        animation: comeBackAddNewProductList .5s;
+    }
+
+    &__wrapper-block {
+        width: 550px;
+        height: 500px;
+        z-index: 2;
+        background-color: #fff;
+        border-radius: 15px;
+        margin-top: 80px;
+
+        &--active {
+            display: block;
+            animation: comeBackAddNewProductList .5s;
+        }
+
+        &__close {
+            text-align: right;
+            margin: 5px 14px 0 0;
+            cursor: pointer;
+        }
+
+        &__productImg {
+            background: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 15px;
+
+            &__text {
+                margin-right: 5px;
+            }
+            &__input {
+                margin-left: 60px;
+                margin-top: 10px;
+            }
+        }
+
+        &__cotigory {
+            background: antiquewhite;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 15px;     
+
+            &__lable {
+
+            }
+            &__select {
+
+                &__option {
+
+                }
+            }
+        }
+
+        &__product-name {
+            background: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 15px;  
+
+            &__input {
+
+            }
+        }
+
+        &__product-price {
+            background: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 15px;  
+
+            &__input {
+
+            }
+        }
+
+        &__geo {
+            background: antiquewhite;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 0;
+            margin-bottom: 15px;
+
+            &__lable {
+
+            }
+
+            &__select {
+                
+                &__option {
+
+                }
+            }
+        }
+
+        &__submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+
+            &__btn {
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+// @keyframes moveInLeft {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(-1rem);
+//     }
+
+//     80% {
+//         transform: translateX(1rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// @keyframes moveInRight {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(10rem);
+//     }
+
+//     80% {
+//         transform: translateX(-1rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+@keyframes comeBackAddNewProductList {
+    0% {
+        opacity: 0;
+        transform: translateY(-800px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes comeCheckedListsBlockWrapper {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes comeCheckedListsBlock {
+    0% {
+        opacity: 0;
+        transform: translateY(-800px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50% -50%);
+    }
+}
+@keyframes comeProfileBlock {
+    0% {
+        opacity: 0;
+        transform: translateY(-800px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes userImgHover {
+    0% {
+        transform: scale(1) rotate3d(1, 1, 1, 15deg);
+    } 
+    50% {
+        transform: rotate3d(1, 1, 1, -15deg);
+    } 
+    100% {
+        transform: scale(1.2) rotate3d(1, 1, 1, 0deg);
+    }
+}
+

@@ -1,0 +1,29 @@
+// PAGES
+@import './pages/home';
+
+// ABSTRACTS
+@import './abstracts/varibles';
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/continer'; 
+
+// BASE CSS
+@import './base/base';
+@import './base/typography';
+@import './base/utilities'; 
+@import './base/animations';
+
+// COMPONENTS
+@import '../components/Header/index';
+@import '../components/Header/navBar/index';
+@import '../components/Main/index'; 
+@import '../components/Main/Search/index';
+@import '../components/Main/Profile/index';
+@import '../components/Main/Profile/User/index';    
+@import '../components/Main/Profile/Form/index';
+@import '../components/Header/Popup/index';
+@import '../components/Main/Products/index';
+@import '../components/Main/Products/Sections/index';   
+@import '../components/Main/Products/MobileList/index';  
+@import '../components/Main/RemoveCheckedItemsPopUp/index';
+@import '../components/Main/AddNewProductList/index';

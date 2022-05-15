@@ -1,0 +1,51 @@
+.checked-items-popup-100vh {
+    width: 100%;
+    height: 100vh; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(200,204,204,.25);
+    display: none;
+
+    &--active {
+        display: block;
+        animation: comeCheckedListsBlockWrapper .5s;
+    }
+    
+    .checked-items-popup {
+        background: aquamarine;
+        width: 160px;
+        padding: 20px;
+        border-radius: 18px;
+        font-size: 19px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        transition: all .5s; 
+        
+        &--active {
+            animation: comeCheckedListsBlock .5s;
+        }
+
+        &__closed-popup {
+            text-align: right;
+            cursor: pointer;
+        }
+
+        &__text {
+
+        }
+        &__wrapper-btns {
+
+            &__yes {
+
+            }
+            &__no {
+                
+            }
+        }
+    }
+}

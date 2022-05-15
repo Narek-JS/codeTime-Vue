@@ -1,0 +1,10 @@
+block sections
+    div(class="sections products__sections")
+        ul(class="sections__lists")
+            each sectionName, index in sections 
+                if (sectionName == "Офферы")
+                    li(class="sections__lists__list sections__lists__list-"+(index+1))=sectionName   
+                        img(class="sections__lists__list__icon " src="@svg/aroow-top-for-section.svg", alt="icon arrow top")
+                else
+                    li(class="sections__lists__list sections__lists__list-"+(index+1))=sectionName
+                        img(class="sections__lists__list__icon" src="@svg/arow-for-section.svg", alt="icon arrow")

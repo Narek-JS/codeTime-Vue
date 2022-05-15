@@ -1,0 +1,13 @@
+block popup 
+    div(class="pop-up header__content__pop-up")
+        div(class="pop-up__user")
+            img(class="pop-up__user__img user-img" src="@images/user.png")
+            p(class="pop-up__user__name")
+                | Phillip Mackie
+        p(class="pop-up__full-row")
+        ul(class="pop-up__lists")
+            each list in popupLists
+                li(class="pop-up__lists__list pop-up__lists__list-" + list.name)= list.value
+        p(class="pop-up__full-row")
+        p(class="pop-up__log-out")
+            | Выйти

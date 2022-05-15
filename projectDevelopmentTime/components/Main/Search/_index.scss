@@ -1,0 +1,132 @@
+.search {
+    position: relative;
+    margin: 0 60px;
+
+    @include respond (tab-port) { margin: 0 20px; }
+
+    &__select-wrapper {
+        display: none;
+
+
+        @include respond (tab-port) { display: block; }
+    }
+
+    &__input {
+        display: block;
+        width: 75%;
+        height: 40px;
+        padding-left: 5%;
+        padding-right: 20%;
+        border-radius: 21px;
+        font-size: 17px;
+        background: $color-grey-dark-list-bg;
+        border: none;
+        background-image: url("@svg/search-icon.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 13px;
+       
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration {
+          -webkit-appearance:none;
+        }
+
+        &::placeholder { 
+            display: block;
+            transform: translateX(10px);
+        }
+
+        &:hover {
+            appearance: none;
+        }
+
+        @include respond (tab-port) { 
+            width: 95%;
+            padding-left: 5%;
+            padding-right: 0;
+        }
+
+        @include clear-respond (520px) {
+            width: 90%;
+            padding-left: 10%;
+        }
+        
+        @include respond (phone) {
+            width: 87%;
+            padding-left: 13%;
+        }
+    }
+
+    &__input-right-content {
+        position: absolute;
+        top: 0px;
+        right: 17px;
+
+        &__simple-row {
+            font-size: 22px;
+            margin: 0px -85px 0 10px;
+        }
+
+        &__text {
+            transform: translateX(90px);
+            display: inline-block;
+        }
+
+        &__select-category, 
+        &__select-country { 
+            width: 20px; 
+            cursor: pointer; 
+            border: none;
+            background: aliceblue;
+            font-size: 1em;
+            padding: 9px 90px 9px 0;    
+
+            &__option {
+                display: block;
+                margin: 20px;
+                font-size: 17px;
+                padding: 20px 10px;
+                background: #FFFFFF; 
+            }
+        }
+
+        @include respond (tab-port) { display: none; }
+    }
+
+    &__selects {
+        display: none; 
+        @include respond(tab-port) { 
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        &__country-wrapper {
+            width: 100%;
+            text-align: center;
+            &__country {
+                width: 90%;
+                display: block;
+                margin-right: 10px;
+                padding: 10px;
+                border: none;
+                background: #f5f7fd;
+                border-radius: 20px;
+            }
+        }
+        &__category-wrapper {
+            width: 100%;
+            text-align: center;
+            &__category {
+                width: 90%;
+                display: block;
+                margin-left: 10px;
+                padding: 10px;
+                border: none;
+                background: #f5f7fd;
+                border-radius: 20px;
+            }
+        }
+    }
+}
